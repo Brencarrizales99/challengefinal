@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAFAFA;
+}
+.title1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+.title2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #4E4F5F;
+    text-align: center;
+}
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #C5C4C9;
+    text-align: center;
+    padding: 17px;
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+
+}
+.padre {
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    flex-wrap: wrap;
+}
+.hijo1 {
+    width: calc(50% - 10px);
+    height: 160px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: static;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-top: 3px  solid #DE5757;
+    border-radius: 4px 4px 0 0;
+}
+.hijo2 {
+    width: calc(50% - 10px);
+    height: 160px;
+    position: absolute;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    margin-top: 180px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-top: 3px  solid #FBAD4A;
+    border-radius: 4px 4px 0 0;
+}
+.hijo3 {
+    width: calc(50% - 10px);
+    height: 160px;
+    position: absolute;
+    margin-left: 530px;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-top: 3px  solid #5D9AE2;
+    border-radius: 4px 4px 0 0;
+}
+.hijo4 {
+    width: calc(50% - 10px);
+    height: 160px;
+    position: absolute;
+    margin-right: 530px;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-top: 3px  solid #44D1D0;
+    border-radius: 4px 4px 0 0;
+}
+.hijo1 h1,
+.hijo2 h1,
+.hijo3 h1,
+.hijo4 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #4F4D5B;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.hijo1 p,
+.hijo2 p,
+.hijo3 p,
+.hijo4 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    color: #C3C2C7;
+    padding: 15px;
+    margin-left: 12px;
+}
+.image{
+    width: 70px;
+    height: 45px;
+    position: relative;
+    display: flex;
+    margin-left: 160px;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.image img{
+    width: 60%;
+    height: 95%;
+    object-fit: cover;
+    display: block;
+}
+/*desktop*/
+@media screen and (max-width: 992px){
+.hijo{
+        display: block;
+}
+}
+/*mobile*/
+@media screen and (max-width: 375px){
+    
+    .padre{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+
